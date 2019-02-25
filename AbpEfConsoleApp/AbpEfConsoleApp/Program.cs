@@ -12,7 +12,7 @@ namespace AbpEfConsoleApp
             //Bootstrapping ABP system
             using (var bootstrapper = AbpBootstrapper.Create<MyConsoleAppModule>())
             {
-                bootstrapper.IocManager
+                bootstrapper.IocManager 
                     .IocContainer
                     .AddFacility<LoggingFacility>(f => f.UseLog4Net().WithConfig("log4net.config"));
 
